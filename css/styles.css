@@ -1,0 +1,84 @@
+:root {
+    --bg: #373F51;
+    --text: #D8DBE2;
+    --highlight-text: #58A4B0;
+    --std: all 200ms ease-in-out;
+}
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 8rem 1fr;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background-color: var(--bg);
+    color: var(--text);
+}
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo {
+    width: 20rem;
+    height: 80%;
+    border: 2px solid red;
+}
+#nav-links {
+    width: 75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.4rem;
+    height: 100%;
+}
+.num {
+    color: var(--highlight-text);
+}
+#cv {
+    width: 6rem;
+    color: var(--highlight-text);
+    border: 2px solid var(--highlight-text);
+    border-radius: 6px;
+    height: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--std);
+}
+#cv:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+article {
+    display: grid;
+    grid-template-columns: 40rem 65rem 1fr;
+    grid-template-rows: 24rem 4rem 8rem 8rem 18rem;
+    grid-gap: 1rem;
+    align-items: center;
+}
+#intro {
+    grid-column: 2;
+    grid-row: 2;
+    color: var(--highlight-text);
+    font-size: 2.4rem;
+}
+#name {
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 9.6rem;
+}
+#statement {
+    grid-column: 2;
+    grid-row: 4;
+    font-size: 6.4rem;
+    opacity: 75%;
+}
+#bio {
+    grid-column: 2;
+    grid-row: 5;
+    font-size: 2.4rem;
+    opacity: 75%;
+}

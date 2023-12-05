@@ -4,23 +4,31 @@
     --highlight-text: #58A4B0;
     --std: all 200ms ease-in-out;
 }
-body {
+#body-home,
+#body-cv {
+    transition: var(--std);
+    background-color: var(--bg);
+    color: var(--text);
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+#body-home {
     height: 100vh;
     display: grid;
     grid-template-rows: 8rem 1fr;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    background-color: var(--bg);
-    color: var(--text);
 }
 a {
     text-decoration: none;
+}
+#nav-links > a:not(:last-child) {
     color: var(--text);
 }
 nav {
+    height: 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--bg);
 }
 #logo {
     width: 20rem;
@@ -52,7 +60,7 @@ nav {
 #cv:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
-article {
+#home-content {
     display: grid;
     grid-template-columns: 40rem 65rem 1fr;
     grid-template-rows: 24rem 4rem 8rem 8rem 18rem;
@@ -65,7 +73,7 @@ article {
     color: var(--highlight-text);
     font-size: 2.4rem;
 }
-#name {
+#home-content > #name {
     grid-column: 2;
     grid-row: 3;
     font-size: 9.6rem;
@@ -81,4 +89,54 @@ article {
     grid-row: 5;
     font-size: 2.4rem;
     opacity: 75%;
+}
+#cv-content {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+#cv-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#info > #name {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+#info > p:not(:first-child) {
+    font-size: 2rem;
+}
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+#email-links {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+}
+#email-links > a {
+    color: var(--highlight-text);
+    display: flex;
+    align-items: center;
+}
+.mail {
+    margin-right: 5px;
+}
+#software-skills {
+    width: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    overflow: hidden;
+}
+i {
+    font-size: 8rem;
 }

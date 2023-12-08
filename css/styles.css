@@ -37,7 +37,7 @@ nav {
     border: 2px solid red;
 }
 #nav-links {
-    width: 75rem;
+    width: 18rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,34 +62,43 @@ nav {
     background-color: rgba(0, 0, 0, 0.3);
 }
 #home-content {
-    display: grid;
-    grid-template-columns: 40rem 65rem 1fr;
-    grid-template-rows: 18rem 4rem 8rem 8rem 18rem;
-    grid-gap: 1rem;
-    align-items: center;
+    position: relative;
+}
+#intro-wrapper {
+    color: black;
+    background-color: var(--text);
+    box-shadow: -1px 4px 16px rgba(0, 0, 0, 0.45);
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 72rem;
+    border-radius: 1rem;
+    padding: 2.2rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
 }
 #intro {
-    grid-column: 2;
-    grid-row: 2;
     color: var(--highlight-text);
     font-size: 2.4rem;
+    margin: 0;
 }
-#home-content > #name {
-    grid-column: 2;
-    grid-row: 3;
+#intro-wrapper > #name {
     font-size: 9.6rem;
+    margin: 0;
 }
 #statement {
-    grid-column: 2;
-    grid-row: 4;
-    font-size: 6.4rem;
+    font-size: 5rem;
     opacity: 75%;
+    margin: 0;
 }
 #bio {
-    grid-column: 2;
-    grid-row: 5;
     font-size: 2.4rem;
     opacity: 75%;
+    margin: 0;
 }
 #cv-content {
     margin-top: 4rem;
@@ -172,24 +181,29 @@ i {
     justify-content: space-between;
 }
 #projects-content {
-    padding: 5rem 20rem;
+    padding: 5rem 8rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16rem;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 5rem 1fr 1fr;
     row-gap: 5rem;
+}
+#projects-content > p {
+    font-size: 3rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 .card {
     font-size: 2rem;
     color: black;
     background-color: var(--text);
     transition: var(--std);
-    box-shadow: -1px 4px 16px rgba(89, 165, 177, 0.45);
+    box-shadow: -1px 4px 16px rgba(0, 0, 0, 0.45);
     border-radius: 1rem;
     padding: 2rem;
 }
 .card:hover {
-    box-shadow: -1px 2px 8px rgba(89, 165, 177, 0.65);
+    box-shadow: -1px 2px 8px rgba(0, 0, 0, 0.65);
 }
 .card > img {
     height: 25rem;

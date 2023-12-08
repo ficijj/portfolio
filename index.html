@@ -15,26 +15,55 @@
             <a id="home" href="index.html">
                 <span class="num">01. </span><span class="label">Home</span>
             </a>
-            <a id="projects" href="projects.html">
-                <span class="num">02. </span><span class="label">Projects</span>
-            </a>
-            <a id="work-experience" href="work.html">
-                <span class="num">03. </span><span class="label">Work Experience</span>
-            </a>
-            <a id="education" href="education.html">
-                <span class="num">04. </span><span class="label">Education</span>
-            </a>
             <a id="cv" href="cv.html">
                 <span>C.V.</span>
             </a>
         </div>
     </nav>
     <article id="home-content">
-        <p id="intro">Hi, my name is</p>
-        <p id="name">Justin Fici</p>
-        <p id="statement">I do things</p>
-        <p id="bio">Future computer science graduate with progressive experience writing code and designing solutions. 
-            Adept at working effectively in fast-paced, deadline-driven settings that demand strong organizational, analytical, and interpersonal skills. </p>
+        <img id="circuit-board" src="media/CircuitBoard.svg">
+        <div id="intro-wrapper">
+            <p id="intro">Hi, my name is</p>
+            <p id="name">Justin Fici</p>
+            <p id="statement">Software Developer</p>
+            <p id="bio">
+                Future computer science graduate with progressive experience writing code and designing solutions. 
+                Adept at working effectively in fast-paced, deadline-driven settings that demand strong organizational, analytical, and interpersonal skills. 
+            </p>
+        </div>
+    </article>
+    <article id="projects-content">
+        <p>Projects</p>
+        <a href="https://github.com/ficijj/Clack" class="card" target="_blank">
+            <p class="card-title">Clack (Clarkson Slack)</p>
+            <img src="media/Clack.PNG">
+            <p class="card-description">Messaging program with a simple GUI, multiple users, and end-to-end encryption.</p>
+        </a>
+        <a href="https://github.com/crazyrecipes/RecipeBuddy" class="card" target="_blank">
+            <p class="card-title">Recipe Buddy</p>
+            <img src="media/RecBud.PNG">
+            <p class="card-description">Digital recipe storage solution that provides easy organization and search functionality.</p>
+        </a>
+        <a href="https://ficijj.github.io/js_rps/" class="card" target="_blank">
+            <p class="card-title">Rock, Paper, Scissors</p>
+            <img src="media/RPS.PNG">
+            <p class="card-description">Simple JavaScript game that lets you play rock, paper, scissors against a cpu.</p>
+        </a>
+        <a href="https://github.com/ficijj/image_classifier" class="card" target="_blank">
+            <p class="card-title">CNN Image Classifier</p>
+            <img src="media/CNN.png">
+            <p class="card-description">Implementation of a Convolutional Neural Network that classifies images from the cifar10 dataset.</p>
+        </a>
+        <a href="https://github.com/ficijj/rsa_aes_chat" class="card" target="_blank">
+            <p class="card-title">Encrypted Chat</p>
+            <img src="media/EncChat.png">
+            <p class="card-description">A command line chat program that uses RSA to share an AES key between two clients, who can then communicate securely.</p>
+        </a>
+        <a href="https://github.com/carykees98/cs-455-project" class="card" target="_blank">
+            <p class="card-title">DV Hop</p>
+            <img src="media/ns3.png">
+            <p class="card-description">An implementation of the distance vector hop algorithm using the NS3 network simulator.</p>
+        </a>
     </article>
 </body>
 </html>

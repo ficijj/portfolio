@@ -10,11 +10,10 @@
 </head>
 <body id="body-home">
     <nav>
-        <img id="logo" src="">
+        <a href="index.html">
+            <img id="logo" src="">
+        </a>
         <div id="nav-links">
-            <a id="home" href="index.html">
-                <span class="num">01. </span><span class="label">Home</span>
-            </a>
             <a id="cv" href="cv.html">
                 <span>C.V.</span>
             </a>
@@ -34,36 +33,79 @@
     </article>
     <article id="projects-content">
         <p>Projects</p>
-        <a href="https://github.com/ficijj/Clack" class="card" target="_blank">
-            <p class="card-title">Clack (Clarkson Slack)</p>
+        <div class="card small" >
+            <a href="https://github.com/ficijj/Clack" class="card-title" target="_blank">Clack (Clarkson Slack)</a>
             <img src="media/Clack.PNG">
             <p class="card-description">Messaging program with a simple GUI, multiple users, and end-to-end encryption.</p>
-        </a>
-        <a href="https://github.com/crazyrecipes/RecipeBuddy" class="card" target="_blank">
-            <p class="card-title">Recipe Buddy</p>
+            <div id="clack" class="more-button">More</div>
+        </div>
+        <div class="card big row1 hide" id="clack-big">
+            <a href="https://github.com/ficijj/Clack" class="card-title" target="_blank">Clack (Clarkson Slack)</a>
+            <img src="media/Clack.PNG">
+            <p class="card-description">Messaging program with a simple GUI, multiple users, and end-to-end encryption.</p>
+            <span class="material-symbols-outlined close" onclick="toggleCard('clack')">close</span>
+        </div>
+        <div class="card small">
+            <a href="https://github.com/crazyrecipes/RecipeBuddy"class="card-title" target="_blank">Recipe Buddy</a>
             <img src="media/RecBud.PNG">
             <p class="card-description">Digital recipe storage solution that provides easy organization and search functionality.</p>
-        </a>
-        <a href="https://ficijj.github.io/js_rps/" class="card" target="_blank">
-            <p class="card-title">Rock, Paper, Scissors</p>
+            <div id="recbud" class="more-button">More</div>
+        </div>
+        <div class="card big row1 hide" id="recbud-big">
+            <a href="https://github.com/crazyrecipes/RecipeBuddy"class="card-title" target="_blank">Recipe Buddy</a>
+            <img src="media/RecBud.PNG">
+            <p class="card-description">Digital recipe storage solution that provides easy organization and search functionality.</p>
+            <span class="material-symbols-outlined close" onclick="toggleCard('recbud')">close</span>
+        </div>
+        <div class="card small">
+            <a href="https://ficijj.github.io/js_rps/" class="card-title" target="_blank">Rock, Paper, Scissors</a>
             <img src="media/RPS.PNG">
             <p class="card-description">Simple JavaScript game that lets you play rock, paper, scissors against a cpu.</p>
-        </a>
-        <a href="https://github.com/ficijj/image_classifier" class="card" target="_blank">
-            <p class="card-title">CNN Image Classifier</p>
+            <div id="rps" class="more-button">More</div>
+        </div>
+        <div class="card big row1 hide" id="rps-big">
+            <a href="https://ficijj.github.io/js_rps/" class="card-title" target="_blank">Rock, Paper, Scissors</a>
+            <img src="media/RPS.PNG">
+            <p class="card-description">Simple JavaScript game that lets you play rock, paper, scissors against a cpu.</p>
+            <span class="material-symbols-outlined close" onclick="toggleCard('rps')">close</span>
+        </div>
+        <div class="card small">
+            <a href="https://github.com/ficijj/image_classifier" class="card-title" target="_blank">CNN Image Classifier</a>
             <img src="media/CNN.png">
-            <p class="card-description">Implementation of a Convolutional Neural Network that classifies images from the cifar10 dataset.</p>
-        </a>
-        <a href="https://github.com/ficijj/rsa_aes_chat" class="card" target="_blank">
-            <p class="card-title">Encrypted Chat</p>
+            <p class="card-description">A Convolutional Neural Network using images from the cifar10 dataset.</p>
+            <div id="cnn" class="more-button">More</div>
+        </div>
+        <div class="card big row2 hide" id="cnn-big">
+            <a href="https://github.com/ficijj/image_classifier" class="card-title" target="_blank">CNN Image Classifier</a>
+            <img src="media/CNN.png">
+            <p class="card-description">A Convolutional Neural Network using images from the cifar10 dataset.</p>
+            <span class="material-symbols-outlined close" onclick="toggleCard('cnn')">close</span>
+        </div>
+        <div class="card small" >
+            <a href="https://github.com/ficijj/rsa_aes_chat" class="card-title" target="_blank">Encrypted Chat</a>
             <img src="media/EncChat.png">
-            <p class="card-description">A command line chat program that uses RSA to share an AES key between two clients, who can then communicate securely.</p>
-        </a>
-        <a href="https://github.com/carykees98/cs-455-project" class="card" target="_blank">
-            <p class="card-title">DV Hop</p>
+            <p class="card-description">A chat program that uses RSA and AES encryption.</p>
+            <div id="encchat" class="more-button">More</div>
+        </div>
+        <div class="card big row2 hide" id="encchat-big">
+            <a href="https://github.com/ficijj/rsa_aes_chat" class="card-title" target="_blank">Encrypted Chat</a>
+            <img src="media/EncChat.png">
+            <p class="card-description">A chat program that uses RSA and AES encryption.</p>
+            <span class="material-symbols-outlined close" onclick="toggleCard('encchat')">close</span>
+        </div>
+        <div class="card small">
+            <a href="https://github.com/carykees98/cs-455-project" class="card-title" target="_blank">DV Hop</a>
             <img src="media/ns3.png">
             <p class="card-description">An implementation of the distance vector hop algorithm using the NS3 network simulator.</p>
-        </a>
+            <div id="dvhop" class="more-button">More</div>
+        </div>
+        <div class="card big row2 hide" id="dvhop-big">
+            <a href="https://github.com/carykees98/cs-455-project" class="card-title" target="_blank">DV Hop</a>
+            <img src="media/ns3.png">
+            <p class="card-description">An implementation of the distance vector hop algorithm using the NS3 network simulator.</p>
+            <span class="material-symbols-outlined close" onclick="toggleCard('dvhop')">close</span>
+        </div>
     </article>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -187,6 +187,7 @@ i {
     column-gap: 16rem;
     grid-template-rows: 5rem 1fr 1fr;
     row-gap: 5rem;
+    position: relative;
 }
 #projects-content > p {
     font-size: 3rem;
@@ -201,10 +202,72 @@ i {
     box-shadow: -1px 4px 16px rgba(0, 0, 0, 0.45);
     border-radius: 1rem;
     padding: 2rem;
+    position: relative;
+    height: 44rem;
 }
-.card:hover {
+.small:hover {
     box-shadow: -1px 2px 8px rgba(0, 0, 0, 0.65);
+    transform: translateY(3px);
+}
+.more-button {
+    color: var(--highlight-text);
+    border: 2px solid var(--highlight-text);
+    border-radius: 5px;
+    width: fit-content;
+    padding: 3px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: var(--std);
+}
+.more-button:hover {
+    background-color: lightgray;
 }
 .card > img {
+    margin-top: 10px;
     height: 25rem;
+}
+.card > a {
+    color: black;
+    text-decoration: underline dashed;
+    padding-bottom: 4px;
+}
+.big {
+    position: absolute;
+    z-index: 10;
+    width: 166rem;
+    display: grid;
+    grid-template-columns: 50rem 1fr;
+    grid-template-rows: 3rem 1fr;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.row1 {
+    top: 13%;
+}
+.row2 {
+    top: 57%
+}
+.big > img {
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    margin-top: 0;
+}
+.big > .card-description {
+    margin-left: 10px;
+}
+.close {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: right;
+    cursor: pointer;
+    color: var(--highlight-text);
+}
+.hide {
+    display: none;
+}
+.blur {
+    filter: blur(5px);
 }

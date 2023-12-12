@@ -5,19 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justin J. Fici</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Whisper" />
     <link rel="stylesheet" href="css/modnorm.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body id="body-home">
     <nav>
-        <a href="index.html">
-            <img id="logo" src="">
-        </a>
-        <div id="nav-links">
-            <a id="cv" href="cv.html">
-                <span>C.V.</span>
-            </a>
-        </div>
+        <a id="logo" href="index.html">Justin J. Fici</a>
+        <a id="cv" href="cv.html"><span>C.V.</span></a>
     </nav>
     <article id="home-content">
         <img id="circuit-board" src="media/CircuitBoard.svg">
@@ -42,7 +37,15 @@
         <div class="card big row1 hide" id="clack-big">
             <a href="https://github.com/ficijj/Clack" class="card-title" target="_blank">Clack (Clarkson Slack)</a>
             <img src="media/Clack.PNG">
-            <p class="card-description">Messaging program with a simple GUI, multiple users, and end-to-end encryption.</p>
+            <div class="card-description">
+                <ul class="card-list">
+                    <li>Written in Java.</li>
+                    <li>Supports a virtually limitless number of simultaneous clients through use of multithreading.</li>
+                    <li>A list of all active client usernames is kept updated and displayed to all clients.</li>
+                    <li>Uses a simple substitution cypher plus Java serialization to ensure some security.</li>
+                    <li>Basic GUI where users can type out and sent their messages and also see all previous messages from other users.</li>
+                </ul>
+            </div>
             <span class="material-symbols-outlined close" onclick="toggleCard('clack')">close</span>
         </div>
         <div class="card small">
@@ -54,7 +57,15 @@
         <div class="card big row1 hide" id="recbud-big">
             <a href="https://github.com/crazyrecipes/RecipeBuddy"class="card-title" target="_blank">Recipe Buddy</a>
             <img src="media/RecBud.PNG">
-            <p class="card-description">Digital recipe storage solution that provides easy organization and search functionality.</p>
+            <div class="card-description">
+                <ul class="card-list">
+                    <li>Written in Java, JavaScript, HTML, and CSS.</li>
+                    <li>Build using the Spring framework.</li>
+                    <li>Custom built database solution that uses local file system for minimal overhead and fast operation.</li>
+                    <li>Works on all major operating systems, as long as Java is installed.</li>
+                    <li>Automatically curates a list of your most relavant and highly rated recipes.</li>
+                </ul>
+            </div>
             <span class="material-symbols-outlined close" onclick="toggleCard('recbud')">close</span>
         </div>
         <div class="card small">
@@ -66,7 +77,14 @@
         <div class="card big row1 hide" id="rps-big">
             <a href="https://ficijj.github.io/js_rps/" class="card-title" target="_blank">Rock, Paper, Scissors</a>
             <img src="media/RPS.PNG">
-            <p class="card-description">Simple JavaScript game that lets you play rock, paper, scissors against a cpu.</p>
+            <div class="card-description">
+                <ul class="card-list">
+                    <li>Adaptive sizing so the game remains playable on any screen size, including mobile devices.</li>
+                    <li>Opponent plays a random choice each time.</li>
+                    <li>Win, loss, and tie stats are tracked using session storage.</li>
+                    <li>Light and dark mode stylings available with an easy toggle switch.</li>
+                </ul>
+            </div>
             <span class="material-symbols-outlined close" onclick="toggleCard('rps')">close</span>
         </div>
         <div class="card small">
@@ -78,7 +96,14 @@
         <div class="card big row2 hide" id="cnn-big">
             <a href="https://github.com/ficijj/image_classifier" class="card-title" target="_blank">CNN Image Classifier</a>
             <img src="media/CNN.png">
-            <p class="card-description">A Convolutional Neural Network using images from the cifar10 dataset.</p>
+            <div class="card-description">
+                <ul class="card-list">
+                    <li>There are 10 different classes included in the dataset.</li>
+                    <li>50,000 total images each 28x28 pixels.</li>
+                    <li>Data augmentation techniques were used to increase the size and variability of the data.</li>
+                    <li>Anywhere from 80 to 85% accuracy achieved.</li>
+                </ul>
+            </div>
             <span class="material-symbols-outlined close" onclick="toggleCard('cnn')">close</span>
         </div>
         <div class="card small" >
@@ -90,7 +115,13 @@
         <div class="card big row2 hide" id="encchat-big">
             <a href="https://github.com/ficijj/rsa_aes_chat" class="card-title" target="_blank">Encrypted Chat</a>
             <img src="media/EncChat.png">
-            <p class="card-description">A chat program that uses RSA and AES encryption.</p>
+            <div class="card-description">
+                <ul class="card-list">
+                    <li>Users specify a host, port, username, bit length for the RSA encryption, and an AES key.</li>
+                    <li>RSA is used to encrypt the AES key, both clients then exchange and decrypt these.</li>
+                    <li>AES is used for all subsequent messages, as it is a more secure secret-key cryptographic system.</li>
+                </ul>
+            </div>
             <span class="material-symbols-outlined close" onclick="toggleCard('encchat')">close</span>
         </div>
         <div class="card small">
@@ -102,7 +133,13 @@
         <div class="card big row2 hide" id="dvhop-big">
             <a href="https://github.com/carykees98/cs-455-project" class="card-title" target="_blank">DV Hop</a>
             <img src="media/ns3.png">
-            <p class="card-description">An implementation of the distance vector hop algorithm using the NS3 network simulator.</p>
+            <div class="card-description">
+                <ul class="card-list">
+                    <li>Adapted from an open-source solution that no longer works as is.</li>
+                    <li>Added command line arguments as well as the ability to save and load configurations from a file.</li>
+                    <li>Changed to allow for much more interesting data to be collected.</li>
+                </ul>
+            </div>
             <span class="material-symbols-outlined close" onclick="toggleCard('dvhop')">close</span>
         </div>
     </article>

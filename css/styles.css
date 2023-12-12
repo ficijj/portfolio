@@ -21,28 +21,18 @@
 a {
     text-decoration: none;
 }
-#nav-links > a:not(:last-child) {
-    color: var(--text);
-}
 nav {
     height: 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--bg);
+    font-size: 2.4rem;
 }
 #logo {
-    width: 20rem;
-    height: 80%;
-    border: 2px solid red;
-}
-#nav-links {
-    width: 18rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 2.4rem;
-    height: 100%;
+    font-family: 'Whisper';
+    font-size: 3.6rem;
+    color: var(--highlight-text);
 }
 .num {
     color: var(--highlight-text);
@@ -159,7 +149,6 @@ nav {
     align-items: center;
     gap: 3rem;
     position: absolute;
-    /* transform: translateX(-10rem); */
 }
 i {
     font-size: 8rem;
@@ -257,6 +246,9 @@ i {
 }
 .big > .card-description {
     margin-left: 10px;
+}
+.card-list > li {
+    margin-bottom: 3rem;
 }
 .close {
     grid-column: 2;
